@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pixel Image Encryption</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-container">
+    <!-- Encryption Section -->
+    <section class="panel encrypt">
+      <h2>🔐 Encrypt Image</h2>
+      <p>Select an image to encrypt. Click "Encrypt" to scramble pixels. Then download image & key separately.</p>
+      <input type="file" id="imageUploader" accept="image/*" />
+      <canvas id="imageCanvas"></canvas>
+      <div class="buttons">
+        <button onclick="encryptImage()">Encrypt</button>
+        <button onclick="downloadEncryptedImage()">Download Encrypted Image</button>
+        <button onclick="downloadEncryptionKey()">Download Encryption Key</button>
+      </div>
+    </section>
+
+    <!-- Decryption Section -->
+    <section class="panel decrypt">
+      <h2>🔓 Decrypt Encrypted Image</h2>
+      <p>Upload an encrypted image and its corresponding key file (.json) to decrypt it.</p>
+
+      <label class="file-label">📤 Upload your encrypted image here:</label>
+      <input type="file" id="encryptedUploader" accept="image/*" />
+
+      <label class="file-label">🗝️ Upload your encryption key here:</label>
+      <input type="file" id="keyUploader" accept=".json" />
+
+      <canvas id="decryptedCanvas"></canvas>
+      <div class="buttons">
+        <button onclick="decryptUploadedImage()">Decrypt</button>
+        <button onclick="downloadDecryptedImage()">Download Decrypted Image</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Progress and Status -->
+  <div class="status-container">
+    <div id="statusMessage">Awaiting Action...</div>
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
