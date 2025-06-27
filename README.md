@@ -10,7 +10,7 @@ This is a web-based GUI implementation of **Pixel Manipulation for Image Encrypt
 
 ## 🌐 Live Demo
 
-> 📌 *(Optional)* Add a GitHub Pages or Netlify/Vercel deployment link here.
+> 📌 https://aksgithub250502.github.io/PRODIGY_CS_02/)
 
 ---
 
@@ -29,7 +29,7 @@ This is a web-based GUI implementation of **Pixel Manipulation for Image Encrypt
 
 ## 📸 Screenshot
 
-> ![PRODIGY_CS_03_preview](https://github.com/user-attachments/assets/98ea642c-a43f-4882-9f18-9f122aaee4e6)
+> ![PRODIGY_CS_02_preview](https://github.com/user-attachments/assets/8af577bc-aa0b-4ce2-b620-4cf40364d8ef)
 
 ---
 
@@ -43,8 +43,6 @@ PRODIGY_CS_02/
 ├── script.js            # Image encryption/decryption logic
 └── assets/              # Preview images
 ```
-
-
 
 ---
 
